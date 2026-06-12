@@ -1,0 +1,35 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "Chat App For ArtInShipping",
+  "main": "chat-server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "chat-server": "node  ./chat-server.js",
+    "chat-run-test": "node  ./test/integration.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sysconsatej/chatApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sysconsatej/chatApp/issues"
+  },
+  "homepage": "https://github.com/sysconsatej/chatApp#readme",
+  "dependencies": {
+    "@novu/api": "^3.17.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "socket.io": "^4.8.3"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.8.3"
+  }
+}
