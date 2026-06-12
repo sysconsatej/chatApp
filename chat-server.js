@@ -41,7 +41,7 @@ const SSL_KEY = process.env.SSL_KEY;
 const app = express();
 app.use(cors({ origin: '*' , methods: ['GET', 'POST'] }));
 app.use(express.json());
-app.use(express.static(path.join(__dirname, '..', 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use('/uploads', express.static(path.join(__dirname, '..', 'chat-uploads')));
 
 // ── HTTP / HTTPS 
