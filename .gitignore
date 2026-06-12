@@ -1,7 +1,6 @@
 src/controller/backups/
 package-lock.json
 .env
-public/
 chat-uploads/
 components/
 node_modules/
