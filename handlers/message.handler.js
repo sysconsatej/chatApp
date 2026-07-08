@@ -125,7 +125,7 @@ class MessageHandler {
     const dmRoomId = Store.getDmRoomId(user.userId, toUserId);
     // Ensure room is initialized in the store even if no messages sent yet
     this._store.getOrCreateRoom(dmRoomId);
-    const messages = this._store.getMessages(dmRoomId)?.slice()?.reverse();
+    const messages = this._store.getMessages(dmRoomId);
     this._ws.sendTo(connId, S.DM_HISTORY, { toUserId, roomId: dmRoomId, messages });
   }
 
